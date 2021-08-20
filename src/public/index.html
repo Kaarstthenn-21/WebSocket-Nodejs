@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="IE=edge"
+    ></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <!-- Bootstrap CDN -->
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous"
+    ></link>
+<!--  Funciones Js -->
+    <script src="Js/funciones.js"></script>
+
+    <title>Mensajes con WebSockets</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2>
+            Implementacion de WebSockets con Nodejs
+        </h2>
+
+        <div class="row mt-4">
+            <div class="col-sm-6">
+                <label class="form-label">Mensaje del Servidor</label>
+
+                <textarea
+                    class="form-control"
+                    name=""
+                    id="mensajes"
+                    cols="20"
+                    rows="10"
+                ></textarea>
+            </div>
+
+            <div class="col-sm-6">
+                <form onsubmit="enviarTexto(event)">
+                    <label
+                        class="form-label"
+                        for=""
+                    >Texto a enviar</label>
+
+                    <input
+                        type="text"
+                        id="texto"
+                        name="texto"
+                        class="form-control"
+                    ></input>
+
+                    <input
+                        type="submit"
+                        value="Enviar"
+                        id="enviar"
+                        class="btn btn-primary mt-2"
+                        disabled="disabled"
+                    ></input>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
